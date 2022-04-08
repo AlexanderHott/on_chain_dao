@@ -1,0 +1,7 @@
+// asdf
+await governor.state("2958587913912052991932141999282576048147918624282520416874475096737823364012")
+const governor = await ethers.getContract('GovernorContract');
+clear()
+cls
+await governor.state("2958587913912052991932141999282576048147918624282520416874475096737823364012")
+const governor = await ethers.getContract('GovernorContract');

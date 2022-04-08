@@ -1,7 +1,7 @@
 import {
   QUORUM_PCT,
   VOTING_PERIOD,
-  VOTING_DELAT,
+  VOTING_DELAY,
 } from './../helper-hardhat-config';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
@@ -26,7 +26,7 @@ const deployGovernorContract: DeployFunction = async (
     args: [
       governanceToken.address,
       timeLock.address,
-      VOTING_DELAT,
+      VOTING_DELAY,
       VOTING_PERIOD,
       QUORUM_PCT,
     ],

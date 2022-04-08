@@ -2,6 +2,27 @@
 
 ## Quick Start
 
+```
+yarn install
+yarn hardhat node
+```
+
+In a new terminal
+
+```
+yarn hardhat run scripts/propose.js --network localhost
+yarn hardhat run scripts/vote.js --network localhost
+yarn hardhat console --network localhost
+
+> const governor = await ethers.getContract('GovernorContract');
+undefined
+// copy and paste the latest proposal id from ./proposals.json into
+// the function below
+> await governor.state("PROPOSAL_ID_HERE");
+1
+// 1 means success
+```
+
 ## What are DAOs?
 
 DAOs are an effective and safe way to work with like-minded folks around the globe.
