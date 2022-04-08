@@ -5,7 +5,6 @@ import {
 } from './../helper-hardhat-config';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
-import { ethers } from 'hardhat';
 
 const deployGovernorContract: DeployFunction = async (
   hre: HardhatRuntimeEnvironment

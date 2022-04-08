@@ -1,7 +1,6 @@
 import { MIN_DELAY } from './../helper-hardhat-config';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
-import { ethers } from 'hardhat';
 
 const deployTimeLock: DeployFunction = async (
   hre: HardhatRuntimeEnvironment
