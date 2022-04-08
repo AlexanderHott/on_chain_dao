@@ -10,8 +10,8 @@ yarn hardhat node
 In a new terminal
 
 ```
-yarn hardhat run scripts/propose.js --network localhost
-yarn hardhat run scripts/vote.js --network localhost
+yarn hardhat run scripts/propose.ts --network localhost
+yarn hardhat run scripts/vote.ts --network localhost
 yarn hardhat console --network localhost
 
 > const governor = await ethers.getContract('GovernorContract');
@@ -19,8 +19,12 @@ undefined
 // copy and paste the latest proposal id from ./proposals.json into
 // the function below
 > await governor.state("PROPOSAL_ID_HERE");
-1
-// 1 means success
+4
+// 4 means success
+^C
+^C
+
+yarn hardhat run scripts/propose-and-execute.ts --network localhost
 ```
 
 ## What are DAOs?
@@ -45,3 +49,6 @@ This is possible because smart contracts are tamper-proof once they go live on E
 
 [Source](https://ethereum.org/en/dao/)
 [OpenZeppelin Governance](https://docs.openzeppelin.com/contracts/4.x/api/governance)
+
+<!-- https://www.youtube.com/watch?v=AhJtmUqhAqg -->
+<!-- https://github.com/PatrickAlphaC/dao-template -->
